@@ -1,0 +1,46 @@
+.site-footer {
+	background-color: $grey-2;
+	padding: em(15) 0;
+	@include clearfix;
+	div {
+		text-align: center;
+		color: $white;
+		p {
+			color: $white;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				margin: 0 em(13); 
+				a {
+					color: $white;
+				}
+			}
+
+			&.social {
+				a {
+					background-color: $white;
+					width: em(30);
+					height: em(30);
+					border-radius: 100%;
+					text-align: center;
+					display: block;
+					i {
+						color: $grey-2;
+						font-size: em(18);
+						line-height: em(30);
+						text-align: center;
+					}
+					&:hover {
+						background-color: $red;
+						i {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
