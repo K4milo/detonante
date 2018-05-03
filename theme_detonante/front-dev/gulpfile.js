@@ -32,9 +32,9 @@ function processors() {
         autoprefixer,
         mqpacker
     ];
-    return gulp.src('./css/*.css')
+    return gulp.src('/../../css/*.css')
         .pipe( postcss(processors) )
-        .pipe( gulp.dest('./css') );
+        .pipe( gulp.dest('/../../css') );
 };
 
 //Tareas de Sass
@@ -60,22 +60,9 @@ gulp.task( 'breakpoint', function() {
 //Font Awesome
 gulp.task('font-awesome', function() {
     return gulp.src(['./node_modules/font-awesome/fonts/fontawesome-webfont.*'])
-           .pipe(gulp.dest('./fonts/'));
+           .pipe(gulp.dest('../../fonts/'));
 });
 
-//Compress JS
-gulp.task('compressjs', function() {
-  return gulp.src(['js/scripts.js', '!js/*.min.js'])
-    .pipe(uglify({
-      mangle: false,
-      output: {
-        beautify: false,
-        indent_level  : 4
-      }
-    }))
-    .pipe(concat('scripts.min.js'))
-    .pipe(gulp.dest('js'));
-});
 
 //Snippet de errores
 var gulp_src = gulp.src;
