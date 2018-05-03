@@ -7,7 +7,7 @@ Editor stylesheet
 */
 
 @import url('bootstrap.min.css');
-@import url('bst-plus.css');
+@import url('bst.css');
 
 body#tinymce {
   padding: 10px !important;

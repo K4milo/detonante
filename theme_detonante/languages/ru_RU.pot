@@ -151,7 +151,7 @@ msgstr "Выйти из этого аккаунта"
 msgid "Log out"
 msgstr "Выйти"
 
-#: .././includes/loops/comments.php:56 .././includes/loops/comments.php:57
+#: .././includes/loops/comments.php:56 .././parts/comments.php:57
 msgid "Your name"
 msgstr "Имя"
 
@@ -159,7 +159,7 @@ msgstr "Имя"
 msgid "(required)"
 msgstr "(обязательно)"
 
-#: .././includes/loops/comments.php:60 .././includes/loops/comments.php:61
+#: .././includes/loops/comments.php:60 .././parts/comments.php:61
 msgid "Your email address"
 msgstr "Email"
 

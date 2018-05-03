@@ -1,57 +1,25 @@
 <?php
 
-function bst_plus_setup() {
-    add_editor_style('css/editor-style.css');
-    add_theme_support('post-thumbnails');
-    update_option('thumbnail_size_w', 170);
-    update_option('medium_size_w', 470);
-    update_option('large_size_w', 970);
+function bst_setup() {
+	add_editor_style('css/editor-style.css');
+	add_theme_support('post-thumbnails');
+	update_option('thumbnail_size_w', 170);
+	update_option('medium_size_w', 470);
+	update_option('large_size_w', 970);
 }
-add_action('init', 'bst_plus_setup');
+add_action('init', 'bst_setup');
 
 if (! isset($content_width))
 	$content_width = 600;
 
-function bst_plus_excerpt_readmore() {
-    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'bst-plus') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+function bst_excerpt_readmore() {
+	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'bst') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
-add_filter('excerpt_more', 'bst_plus_excerpt_readmore');
+add_filter('excerpt_more', 'bst_excerpt_readmore');
 
-//------------------------------------------------
-//  ACF Support
-//------------------------------------------------
+// Browser detection body_class() output
 
-// 1. Define ACF PATH
-function configure_path_acf($path) {
- 
-    // actualizar el path
-    $path = get_stylesheet_directory() . '/includes/acf/';
-    
-    return $path;
-    
-}
-
-add_filter('acf/settings/path', 'configure_path_acf');
- 
-// 2. Configure folder
-function configure_folder_acf( $dir ) {
- 
-    // actualizar el directorio
-    $dir = get_stylesheet_directory_uri() . '/includes/acf/';
-    
-    return $dir;
-    
-}
-add_filter('acf/settings/dir', 'configure_folder_acf');
- 
-// 3. hide from admin
-//add_filter('acf/settings/show_admin', '__return_false');
-
-// 4. Include ACF
-include_once( get_stylesheet_directory() . '/includes/acf/acf.php' );
-
-
-function bst_plus_browser_body_class( $classes ) {
+function bst_browser_body_class( $classes ) {
 	global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
 	
 	if($is_lynx) $classes[] = 'lynx';
@@ -76,8 +44,8 @@ function bst_plus_browser_body_class( $classes ) {
 			$classes[] = 'ie9';
 			$classes[] = 'ie';
 		} else {
-            $classes[] = 'ie';
-        }
+	            $classes[] = 'ie';
+	        }
 	}
 	else $classes[] = 'unknown';
  
@@ -85,16 +53,15 @@ function bst_plus_browser_body_class( $classes ) {
  
 	return $classes;
 }
-add_filter( 'body_class', 'bst_plus_browser_body_class' );
+add_filter( 'body_class', 'bst_browser_body_class' );
 
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
-
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
 // Bootstrap pagination
 
-if ( ! function_exists( 'bst_plus_pagination' ) ) {
-	function bst_plus_pagination() {
+if ( ! function_exists( 'bst_pagination' ) ) {
+	function bst_pagination() {
 		global $wp_query;
 		$big = 999999999; // This needs to be an unlikely integer
 		// For more options and info view the docs for paginate_links()
