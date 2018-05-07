@@ -1,32 +1,72 @@
-//fonts
 @font-face {
-    font-family: 'PT Sans Italic';
-    src: url('../fonts/pt_sans/PTSans-Italic.woff2') format('woff2'),
-        url('../fonts/pt_sans/PTSans-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'PT Sans Bold';
-    src: url('../fonts/pt_sans/PTSans-Bold.woff2') format('woff2'),
-        url('../fonts/pt_sans/PTSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url('../fonts/pt_sans/PTSans-Regular.woff2') format('woff2'),
-        url('../fonts/pt_sans/PTSans-Regular.woff') format('woff');
+    font-family: 'InterFace DaMa Lt';
+    src: url('../fonts/interface/InterFaceDaMaLt.woff2') format('woff2'),
+        url('../fonts/interface/InterFaceDaMaLt.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PT Sans Bold Italic';
-    src: url('../fonts/pt_sans/PTSans-BoldItalic.woff2') format('woff2'),
-        url('../fonts/pt_sans/PTSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Brandon Grotesque Med';
+    src: url('../fonts/brandon/BrandonGrotesque-MediumItalic.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-MediumItalic.woff') format('woff');
+    font-weight: 500;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    src: url('../fonts/brandon/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque TI';
+    src: url('../fonts/brandon/BrandonGrotesque-ThinItalic.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque LI';
+    src: url('../fonts/brandon/BrandonGrotesque-LightItalic.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/brandon/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('../fonts/brandon/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque B Italic';
+    src: url('../fonts/brandon/BrandonGrotesque-BlackItalic.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Light';
+    src: url('../fonts/brandon/BrandonGrotesque-Light.woff2') format('woff2'),
+        url('../fonts/brandon/BrandonGrotesque-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
