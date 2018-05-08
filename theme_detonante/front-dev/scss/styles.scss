@@ -9,7 +9,10 @@
 @import "_header";
 @import "_contact";
 @import "_footer";
+@import "vendors/slick-theme"; 
 
+//Blocks
+@import "blocks/blk_hero_slider";
 
 //sections
 @import "_home";

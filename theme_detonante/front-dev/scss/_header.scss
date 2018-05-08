@@ -1,9 +1,13 @@
 body {
 	.navbar {
-		background-color: $lgrey;
+		background-color: transparent;
 		transition: all 0.5s;
 		margin: 0;
 		padding: em(20) 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		whidth: 100%;
 		&.affix{
 			width: 100%;
 			transition: all 0.5s;
@@ -34,8 +38,8 @@ body {
 				.navbar-brand {
 					float: none;
 					display: block;
-					width: 481px;
-					height: 54px;
+					width: 147px;
+					height: 133px;
 					background-image: url('../img/logos/logo.png');
 					background-size: contain;
 					background-repeat: no-repeat;
@@ -43,8 +47,8 @@ body {
 					padding: 0;
 					margin: 0;
 					@include mobile {
-						width: 230px;
-						height: 50px;
+						width: 107px;
+						height: 93px;
 					}
 				}
 			}
@@ -74,6 +78,7 @@ body {
 						@include desktop {
 							display: inline-block;
 							vertical-align: middle;
+							text-align: right;
 						}
 						li {
 							@include desktop {
@@ -86,21 +91,19 @@ body {
 							}
 							a {
 								display: block;
-								color: $black;
-								font-size: em(18);
+								color: $white;
+								font-size: em(13);
 								text-align: center;
-								padding: em(30) em(32);
+								padding: em(10) em(12);
 								transition: all 0.3s;
 								text-transform: uppercase;
-								font-family: $bold;
-								border-bottom: em(4) solid $lgrey;
 								&:hover {
 									background-color: $black;
 									color: $white;
 									border-color: $red;
 								}
 								@include tablet {
-									padding: em(20);
+									padding: em(10);
 								}
 								@include mobile {
 									padding: em(12);
@@ -108,23 +111,6 @@ body {
 							}
 						}
 					}
-				}
-			}
-			//Sponsor
-			.sponsor {
-				@include tablet {
-					display: block;
-					position: absolute;
-					top: 17px;
-					right: 41px;
-				}
-				@include mobile {
-					display: none;
-				}
-				display: inline-block;
-				vertical-align: middle;
-				img {
-					max-width: 100%;
 				}
 			}
 		}
