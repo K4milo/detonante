@@ -1,0 +1,54 @@
+.hero-slider {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	.hero-slider--main-slider {
+		padding: 0;
+		margin: 0;
+		@include desktop;
+		.slider--item {
+			display: block;
+			text-align: center;
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+			@include desktop {
+				height: 100vh;
+				min-height: em(700);
+			}
+			.caption-slider {
+				display: block;
+				color: $white;
+				width: 90%;
+				max-width: em(650);
+				@include desktop {
+					position: absolute;
+					bottom: 18%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				h3 {
+					display: inline-block;
+					color: $white;
+					font-size: em(28);
+					font-family: $bold;
+					letter-spacing: 5px;
+					border: em(5) solid $yellow;
+					text-align: center;
+					padding: 20px;
+					@include desktop {
+						padding: 40px;
+						font-size: em(58);
+						height: 320px;
+					}
+				}
+				p {
+					letter-spacing: 4px;
+					font-size: em(20);
+					font-family: $light;
+				}
+			}
+		}
+	}
+}

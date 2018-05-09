@@ -80,7 +80,7 @@ gulp.src = function() {
 //Tarea Deault
 gulp.task('default', task, function(){
 
-  gulp.watch(['./scss/*.scss', './js/*.js', '!./js/*.min.js'], task, processors());
+  gulp.watch(['./scss/**/*.scss', './js/*.js', '!./js/*.min.js'], task, processors());
 
   // Create LiveReload server
   livereload.listen();

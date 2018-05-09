@@ -11,6 +11,9 @@ get_template_part('includes/header');
 		//Slideshow
 		get_template_part('includes/blocks/main','slider'); 
 
+		//Video Vimeo
+		get_template_part('includes/blocks/video','vimeo'); 
+
 
 	endwhile;
 

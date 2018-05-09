@@ -1,0 +1,32 @@
+.video-vimeo {
+	.video-wrapper {
+		background-image: url('../img/bg/sea_bg.jpg');
+		background-size: cover;
+		background-position: center center;
+		text-align: center;
+		padding: em(40);
+		@include desktop {
+			padding: em(108) 0 em(80);
+		}
+		iframe {
+			width: em(388);
+			height: em(255);
+			display: block;
+			margin: 0 auto em(20);
+			@include desktop {
+				width: em(988);
+				height: em(455);
+			}
+		}
+		h4 {
+			display: inline-block;
+			color: $white;
+			font-size: em(28);
+			font-family: $bold;
+			letter-spacing: 5px;
+			@include desktop {
+				font-size: em(58);
+			}
+		}
+	}
+}

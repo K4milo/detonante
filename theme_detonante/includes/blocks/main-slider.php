@@ -9,7 +9,10 @@
 		// Slider block
 		while(have_rows('items_slider')): the_row(); ?>
 			<li class="slider--item" style="background-image: url(<?php the_sub_field('image_field');?>)">
-				<h3><?php the_sub_field('text_field');?></h3>
+				<div class="caption-slider">
+					<h3><?php the_sub_field('text_field');?></h3>
+					<p><?php the_sub_field('bottom_field'); ?></p>
+				</div>
 			</li>
 		<?php
 		endwhile;
