@@ -1,0 +1,52 @@
+.items_informativos {
+	position: relative;
+	background-color: $dgrey;
+	padding: em(30) 0;
+	@include desktop{
+		padding: em(60) 0;
+	}
+	.container {
+		@include clearfix;
+		.info--item {
+			text-align: center;
+			figure {
+				img {
+					display: inline-block;
+				}
+			}
+			h3 {
+				color: $white;
+				text-transform: uppercase;
+				letter-spacing: 5px; 
+				font-size: em(35);
+				font-family: $bold;
+			}
+			.text-wrap {
+				min-height: em(100);
+				p {
+					color: $white;
+				}
+			}
+			.cta-info {
+				color: $white;
+				font-size: em(13);
+				font-family: $bold;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				background-color: $black;
+				transition: all 0.4s;
+				padding: 10px 24px;
+				&:hover {
+					background-color: $salmon;
+				}
+				i {
+					font-size: em(10);
+					display: inline-block;
+					vertical-align: middle;
+					position: relative;
+					top:-2px;
+				}
+			}
+		}
+	}
+}

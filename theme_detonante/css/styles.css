@@ -2817,3 +2817,139 @@ body .navbar {
     @media (min-width: 1200px) {
       .video-vimeo .video-wrapper h4 {
         font-size: 3.625em; } }
+
+.items_informativos {
+  position: relative;
+  background-color: #333333;
+  padding: 1.875em 0; }
+  @media (min-width: 1200px) {
+    .items_informativos {
+      padding: 3.75em 0; } }
+  .items_informativos .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .items_informativos .container .info--item {
+    text-align: center; }
+    .items_informativos .container .info--item figure img {
+      display: inline-block; }
+    .items_informativos .container .info--item h3 {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 2.1875em;
+      font-family: "Brandon Grotesque Bold"; }
+    .items_informativos .container .info--item .text-wrap {
+      min-height: 6.25em; }
+      .items_informativos .container .info--item .text-wrap p {
+        color: #ffffff; }
+    .items_informativos .container .info--item .cta-info {
+      color: #ffffff;
+      font-size: 0.8125em;
+      font-family: "Brandon Grotesque Bold";
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background-color: #000000;
+      transition: all 0.4s;
+      padding: 10px 24px; }
+      .items_informativos .container .info--item .cta-info:hover {
+        background-color: #f53b48; }
+      .items_informativos .container .info--item .cta-info i {
+        font-size: 0.625em;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -2px; }
+
+.infographs-inline .quote-title {
+  background-color: #333333;
+  padding: 1.25em 0;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .infographs-inline .quote-title {
+      padding: 2.5em 0; } }
+  .infographs-inline .quote-title h2 {
+    display: inline-block; }
+    .infographs-inline .quote-title h2 img {
+      display: inline-block;
+      width: 60px; }
+      @media (min-width: 1200px) {
+        .infographs-inline .quote-title h2 img {
+          width: 106px; } }
+    .infographs-inline .quote-title h2 a {
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      margin: 0 20px;
+      color: #81f3aa;
+      padding-bottom: 15px; }
+      @media (min-width: 1200px) {
+        .infographs-inline .quote-title h2 a {
+          font-size: 40px;
+          margin: 0 60px; } }
+      .infographs-inline .quote-title h2 a::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-size: 100%;
+        background-image: url("../img/patterns/bg_pattern.png"); }
+
+.infographs-inline .modal .modal-dialog {
+  width: 90%;
+  max-width: 960px; }
+  .infographs-inline .modal .modal-dialog img {
+    width: 100%; }
+
+.infographs-inline .infographs-inline--wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.infographs-inline .infographs-inline--wrapper .inline-item {
+  background-position: center center;
+  background-size: cover;
+  height: 26.875em;
+  position: relative; }
+  .infographs-inline .infographs-inline--wrapper .inline-item h3 {
+    display: block;
+    width: 100%; }
+    .infographs-inline .infographs-inline--wrapper .inline-item h3 a {
+      position: relative;
+      color: #ffffff;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-family: "Brandon Grotesque Bold";
+      transition: all 0.4s;
+      z-index: 1; }
+      @media (min-width: 1200px) {
+        .infographs-inline .infographs-inline--wrapper .inline-item h3 a {
+          font-size: 40px;
+          letter-spacing: 4px; } }
+      .infographs-inline .infographs-inline--wrapper .inline-item h3 a::after {
+        content: "";
+        display: block;
+        width: 95%;
+        height: 90%;
+        top: 5%;
+        left: 5%;
+        z-index: -1;
+        position: absolute;
+        background-color: #f9d423;
+        transition: all 0.4s; }
+      .infographs-inline .infographs-inline--wrapper .inline-item h3 a:hover::after {
+        width: 100%;
+        height: 95%;
+        top: 2.5%;
+        left: 2.5%; }
+    @media (min-width: 1200px) {
+      .infographs-inline .infographs-inline--wrapper .inline-item h3 {
+        max-width: 450px;
+        height: 134px;
+        position: absolute;
+        left: 50px;
+        bottom: 30%; } }
+  .infographs-inline .infographs-inline--wrapper .inline-item:first-child h3 a::after {
+    background-color: #35086e; }

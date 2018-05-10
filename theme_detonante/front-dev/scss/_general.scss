@@ -68,6 +68,19 @@ $browser-context: 16; // Default
   }
 }
 
+@mixin gradient-line ($bottom, $height) {
+  &::after {
+    content: "";
+    width: 100%;
+    height: $height;
+    bottom: $bottom;
+    left: 0;
+    position: absolute;
+    background-size: 100%;
+    background-image: url('../img/patterns/bg_pattern.png');
+  }
+}
+
 @mixin thePlaceholder ($color) {
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $color;

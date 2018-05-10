@@ -14,6 +14,12 @@ get_template_part('includes/header');
 		//Video Vimeo
 		get_template_part('includes/blocks/video','vimeo'); 
 
+		//Infographics
+		get_template_part('includes/blocks/block','infographics'); 
+
+		//Information
+		get_template_part('includes/blocks/block','info'); 
+
 
 	endwhile;
 
