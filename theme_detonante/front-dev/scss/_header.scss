@@ -34,10 +34,12 @@ body {
 			
 			//Social networks
 			.navbar-social {
+				display: none;
 				position: absolute;
 				top: 10px;
 				right: 20px;
 				@include desktop {
+					display: block;
 					top: 45px;
 					right: 40px;
 				}

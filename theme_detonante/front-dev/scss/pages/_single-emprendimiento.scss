@@ -1,0 +1,143 @@
+// Single page for emprendimiento
+body {
+	&.single-emprendimiento {
+		// Header single emprendimiento
+		.top-single-header {
+			width: 100%;
+			height: em(230);
+			padding: em(20) 0;
+			background-size: cover;
+			background-position: center center;
+			background-image: url('../img/bg/header_bg_2.jpg');
+			position: relative;
+			text-align: center;
+			@include mobile {
+				padding-top: em(100);
+				height: em(330);
+			}
+			@include desktop {
+				height: em(430);
+			}
+			h1 {
+				display: inline-block;
+				color: $white;
+				font-size: em(28);
+				font-family: $bold;
+				letter-spacing: 5px;
+				border: em(5) solid $yellow;
+				text-align: center;
+				padding: 20px;
+				@include desktop {
+					padding: 40px;
+					font-size: em(38);
+					position: absolute;
+					bottom: 18%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+		
+		//Text content
+		.top-information {
+			.side-profile {
+				
+				@include desktop {
+					padding: 0 em(25);
+					&:nth-child(2) {
+						border-left: 1px solid $black;
+					}
+				}
+
+				h2 {
+					text-transform: uppercase;
+					color: $salmon;
+					font-family: $bold;
+					letter-spacing: 4px;
+					font-size: em(30);
+				}
+				
+				// logo 
+				.logo-emp {
+					img {
+						display: block;
+						max-width: 100%;
+						margin: em(20) auto;
+					}
+				}
+
+				// contact list 
+				.contact-items {
+					text-align: center;
+					border-bottom: 1px solid $black;
+					h4 {
+						display: inline-block;
+						color: $black;
+						font-family: $bold;
+						letter-spacing: 4px;
+						text-decoration: underline;
+						text-transform: uppercase;
+						padding-bottom: em(15);
+						margin-bottom: em(15);
+					}
+					ul {
+						padding-left: 0;
+						li {
+							display: inline-block;
+							@include desktop {
+								margin-right: em(25);
+							}
+							a {
+								color: $black;
+							}
+							i {
+								display: inline-block;
+								width: em(30);
+								height: em(30);
+								line-height: em(25);
+								color: $black;
+								border-radius: 100%;
+								border: 2px solid $black;
+							}
+						}
+					}
+				}
+			} 
+		}
+		// Gallery
+		.gallery-contact {
+			padding-top: em(30);
+			padding-bottom: em(30);
+			position: relative;
+
+			.slick-slide {
+				@include desktop {
+					margin: 0 em(20);
+				}
+			}
+			.gallery-carousel {
+				padding: 0;
+				position: relative;
+				.item-gallery {
+					display: block;
+					height: em(330);
+					background-size: cover;
+					background-position: center center;
+				}
+			}
+			.slick-dots {
+				li{
+					height: em(9);
+				}
+			}
+		}
+
+		// infographics
+		.single-infographics {
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

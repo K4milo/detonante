@@ -2448,11 +2448,13 @@ body .navbar {
   body .navbar .container-fluid {
     position: relative; }
     body .navbar .container-fluid .navbar-social {
+      display: none;
       position: absolute;
       top: 10px;
       right: 20px; }
       @media (min-width: 1200px) {
         body .navbar .container-fluid .navbar-social {
+          display: block;
           top: 45px;
           right: 40px; } }
       body .navbar .container-fluid .navbar-social .header-social {
@@ -2822,6 +2824,110 @@ body .navbar {
           display: none; }
     .slick-dots li.slick-active button {
       background-color: white; }
+
+body.single-emprendimiento .top-single-header {
+  width: 100%;
+  height: 14.375em;
+  padding: 1.25em 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg/header_bg_2.jpg");
+  position: relative;
+  text-align: center; }
+  @media (max-width: 767px) {
+    body.single-emprendimiento .top-single-header {
+      padding-top: 6.25em;
+      height: 20.625em; } }
+  @media (min-width: 1200px) {
+    body.single-emprendimiento .top-single-header {
+      height: 26.875em; } }
+  body.single-emprendimiento .top-single-header h1 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.75em;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 5px;
+    border: 0.3125em solid #f9d423;
+    text-align: center;
+    padding: 20px; }
+    @media (min-width: 1200px) {
+      body.single-emprendimiento .top-single-header h1 {
+        padding: 40px;
+        font-size: 2.375em;
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%); } }
+
+@media (min-width: 1200px) {
+  body.single-emprendimiento .top-information .side-profile {
+    padding: 0 1.5625em; }
+    body.single-emprendimiento .top-information .side-profile:nth-child(2) {
+      border-left: 1px solid #000000; } }
+
+body.single-emprendimiento .top-information .side-profile h2 {
+  text-transform: uppercase;
+  color: #f53b48;
+  font-family: "Brandon Grotesque Bold";
+  letter-spacing: 4px;
+  font-size: 1.875em; }
+
+body.single-emprendimiento .top-information .side-profile .logo-emp img {
+  display: block;
+  max-width: 100%;
+  margin: 1.25em auto; }
+
+body.single-emprendimiento .top-information .side-profile .contact-items {
+  text-align: center;
+  border-bottom: 1px solid #000000; }
+  body.single-emprendimiento .top-information .side-profile .contact-items h4 {
+    display: inline-block;
+    color: #000000;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 4px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 0.9375em;
+    margin-bottom: 0.9375em; }
+  body.single-emprendimiento .top-information .side-profile .contact-items ul {
+    padding-left: 0; }
+    body.single-emprendimiento .top-information .side-profile .contact-items ul li {
+      display: inline-block; }
+      @media (min-width: 1200px) {
+        body.single-emprendimiento .top-information .side-profile .contact-items ul li {
+          margin-right: 1.5625em; } }
+      body.single-emprendimiento .top-information .side-profile .contact-items ul li a {
+        color: #000000; }
+      body.single-emprendimiento .top-information .side-profile .contact-items ul li i {
+        display: inline-block;
+        width: 1.875em;
+        height: 1.875em;
+        line-height: 1.5625em;
+        color: #000000;
+        border-radius: 100%;
+        border: 2px solid #000000; }
+
+body.single-emprendimiento .gallery-contact {
+  padding-top: 1.875em;
+  padding-bottom: 1.875em;
+  position: relative; }
+  @media (min-width: 1200px) {
+    body.single-emprendimiento .gallery-contact .slick-slide {
+      margin: 0 1.25em; } }
+  body.single-emprendimiento .gallery-contact .gallery-carousel {
+    padding: 0;
+    position: relative; }
+    body.single-emprendimiento .gallery-contact .gallery-carousel .item-gallery {
+      display: block;
+      height: 20.625em;
+      background-size: cover;
+      background-position: center center; }
+  body.single-emprendimiento .gallery-contact .slick-dots li {
+    height: 0.5625em; }
+
+body.single-emprendimiento .single-infographics img {
+  max-width: 100%;
+  height: auto; }
 
 .hero-slider {
   position: relative;
