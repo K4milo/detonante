@@ -1,0 +1,50 @@
+.taxonomies-wrapper {
+	padding: em(50) 0;
+	text-align: center;
+	@include clearfix;
+	.taxonomy-item {
+		margin-bottom: em(25);
+		transition: all 0.4s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		h3{
+			font-size: em(25);
+			text-transform: uppercase;
+			font-family: $bold;
+			@include desktop {
+				font-size: em(35);
+			}
+		}
+		&.taxonomy-alimentos {
+			h3 {
+				color: $salmon;
+			}
+		}
+		&.taxonomy-bebidas {
+			h3 {
+				color: $dpurple;
+			}
+		}
+		&.taxonomy-postres {
+			h3 {
+				color: $pink;
+			}
+		}
+		&.taxonomy-productos {
+			h3 {
+				color: $marine;
+			}
+		}
+		&.taxonomy-servicios {
+			h3 {
+				color: $lblue;
+			}
+		}
+		&.taxonomy-artesanias {
+			h3 {
+				color: $yellow;
+			}
+		}
+	}
+}

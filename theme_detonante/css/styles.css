@@ -2390,6 +2390,9 @@ body {
     transition: all 0.3s; }
     body a:hover {
       transition: all 0.3s; }
+  body img {
+    max-width: 100%;
+    height: auto; }
   body .con-modal {
     display: none;
     background-color: rgba(0, 0, 0, 0.75);
@@ -2542,6 +2545,7 @@ body .navbar {
           body .navbar .container-fluid #navbar ul.navbar-nav li a {
             display: block;
             color: #ffffff;
+            position: relative;
             font-size: 0.8125em;
             text-align: center;
             padding: 0.625em 0.75em;
@@ -2557,6 +2561,17 @@ body .navbar {
             @media (max-width: 767px) {
               body .navbar .container-fluid #navbar ul.navbar-nav li a {
                 padding: 0.75em; } }
+          body .navbar .container-fluid #navbar ul.navbar-nav li.active a {
+            background: none; }
+            body .navbar .container-fluid #navbar ul.navbar-nav li.active a::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              background-size: 100%;
+              background-image: url("../img/patterns/bg_pattern.png"); }
 
 .site-footer {
   background-color: #000000; }
@@ -2929,6 +2944,53 @@ body.single-emprendimiento .single-infographics img {
   max-width: 100%;
   height: auto; }
 
+.taxonomy-products-loop {
+  text-align: center;
+  margin-bottom: 2.5em; }
+  .taxonomy-products-loop:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .taxonomy-products-loop .col-md-4 {
+    transition: all 0.4s; }
+    .taxonomy-products-loop .col-md-4:hover {
+      transform: scale(1.1); }
+    .taxonomy-products-loop .col-md-4 h3 {
+      color: #000000;
+      text-decoration: underline; }
+
+.taxonomies-wrapper {
+  padding: 3.125em 0;
+  text-align: center; }
+  .taxonomies-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .taxonomies-wrapper .taxonomy-item {
+    margin-bottom: 1.5625em;
+    transition: all 0.4s; }
+    .taxonomies-wrapper .taxonomy-item:hover {
+      transform: scale(1.1); }
+    .taxonomies-wrapper .taxonomy-item h3 {
+      font-size: 1.5625em;
+      text-transform: uppercase;
+      font-family: "Brandon Grotesque Bold"; }
+      @media (min-width: 1200px) {
+        .taxonomies-wrapper .taxonomy-item h3 {
+          font-size: 2.1875em; } }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-alimentos h3 {
+      color: #f53b48; }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-bebidas h3 {
+      color: #453A94; }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-postres h3 {
+      color: #E14FAD; }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-productos h3 {
+      color: #81f3aa; }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-servicios h3 {
+      color: #00DBDE; }
+    .taxonomies-wrapper .taxonomy-item.taxonomy-artesanias h3 {
+      color: #f9d423; }
+
 .hero-slider {
   position: relative;
   width: 100%;
@@ -3140,3 +3202,75 @@ body.single-emprendimiento .single-infographics img {
         bottom: 30%; } }
   .infographs-inline .infographs-inline--wrapper .inline-item:first-child h3 a::after {
     background-color: #35086e; }
+
+.main-header {
+  width: 100%;
+  padding: 1.25em 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg/header_bg_1.jpg");
+  position: relative;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .main-header {
+      padding-top: 6.25em; } }
+  .main-header .caption-header {
+    display: inline-block;
+    position: relative;
+    color: #81f3aa;
+    padding: 3em 4.375em;
+    width: 100%;
+    max-width: 960px;
+    border: 0.25em solid;
+    margin: 120px auto 40px; }
+    @media (min-width: 1200px) {
+      .main-header .caption-header {
+        margin: 200px auto 40px; } }
+    .main-header .caption-header p {
+      font-size: 1.375em; }
+      @media (min-width: 1200px) {
+        .main-header .caption-header p {
+          font-size: 2.625em;
+          font-family: "Brandon Grotesque Bold";
+          text-transform: uppercase; } }
+    .main-header .caption-header img {
+      display: block;
+      width: 4.375em;
+      position: absolute; }
+      .main-header .caption-header img.quote-left {
+        left: 1.25em;
+        top: 1.25em; }
+      .main-header .caption-header img.quote-right {
+        right: 1.25em;
+        bottom: 1.25em; }
+
+.taxonomy-icon {
+  text-align: center;
+  padding: 2.5em 0; }
+  .taxonomy-icon img {
+    display: inline-block; }
+  .taxonomy-icon h2 {
+    font-size: 1.5625em;
+    text-transform: uppercase;
+    font-family: "Brandon Grotesque Bold"; }
+    @media (min-width: 1200px) {
+      .taxonomy-icon h2 {
+        font-size: 2.1875em; } }
+
+body.term-alimentos .taxonomy-icon h2 {
+  color: #f53b48; }
+
+body.term-bebidas .taxonomy-icon h2 {
+  color: #453A94; }
+
+body.term-postres .taxonomy-icon h2 {
+  color: #E14FAD; }
+
+body.term-productos .taxonomy-icon h2 {
+  color: #81f3aa; }
+
+body.term-servicios .taxonomy-icon h2 {
+  color: #00DBDE; }
+
+body.term-artesanias .taxonomy-icon h2 {
+  color: #f9d423; }

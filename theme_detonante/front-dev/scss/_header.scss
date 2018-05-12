@@ -152,6 +152,7 @@ body {
 							a {
 								display: block;
 								color: $white;
+								position: relative;
 								font-size: em(13);
 								text-align: center;
 								padding: em(10) em(12);
@@ -167,6 +168,12 @@ body {
 								}
 								@include mobile {
 									padding: em(12);
+								}
+							}
+							&.active  {
+								a {
+									background: none;
+									@include gradient-line(0, 3px);
 								}
 							}
 						}

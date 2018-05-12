@@ -1,0 +1,115 @@
+// Header general
+.main-header {
+	width: 100%;
+	padding: em(20) 0;
+	background-size: cover;
+	background-position: center center;
+	background-image: url('../img/bg/header_bg_1.jpg');
+	position: relative;
+	text-align: center;
+	@include mobile {
+		padding-top: em(100);
+		
+	}
+	@include desktop {
+		
+	}
+	//caption for header
+	.caption-header {
+		display: inline-block;
+		position: relative;
+		color: $marine;
+		padding: em(48) em(70);
+		width: 100%;
+		max-width: 960px;
+		border: em(4) solid;
+		margin: 120px auto 40px;
+		@include desktop {
+			margin: 200px auto 40px;
+		}
+		p {
+			font-size: em(22);
+			@include desktop {
+				font-size: em(42);
+				font-family: $bold;
+				text-transform: uppercase;
+			}
+		}
+		img {
+			display: block;
+			width: em(70);
+			position: absolute;
+			&.quote-left{
+				left: em(20);
+				top: em(20);
+			}
+			&.quote-right{
+				right: em(20);
+				bottom: em(20);
+			}
+		}
+	}
+}
+
+//Jus for taxonomies
+.taxonomy-icon {
+	text-align: center;
+	padding: em(40) 0;
+	img {
+		display: inline-block;
+	}
+	h2 {
+		font-size: em(25);
+		text-transform: uppercase;
+		font-family: $bold;
+		@include desktop {
+			font-size: em(35);
+		}
+	}
+}
+
+body {
+
+	&.term-alimentos {
+		.taxonomy-icon {
+			h2 {
+				color: $salmon;
+			}
+		}
+	}
+	&.term-bebidas {
+		.taxonomy-icon {
+			h2 {
+				color: $dpurple;
+			}
+		}
+	}
+	&.term-postres {
+		.taxonomy-icon {
+			h2 {
+				color: $pink;
+			}
+		}
+	}
+	&.term-productos {
+		.taxonomy-icon {
+			h2 {
+				color: $marine;
+			}
+		}
+	}
+	&.term-servicios {
+		.taxonomy-icon {
+			h2 {
+				color: $lblue;
+			}
+		}
+	}
+	&.term-artesanias {
+		.taxonomy-icon {
+			h2 {
+				color: $yellow;
+			}
+		}
+	}
+}

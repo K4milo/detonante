@@ -19,8 +19,13 @@
 //Pages
 @import "pages/_single-emprendimiento";
 
+//loops
+@import "loops/_loop-posts";
+@import "loops/_loop-taxonomies";
+
 //Blocks
 @import "blocks/_slider";
 @import "blocks/_video-vimeo";
 @import "blocks/_block-info";
 @import "blocks/_infographs-inline";
+@import "blocks/_main-header";
