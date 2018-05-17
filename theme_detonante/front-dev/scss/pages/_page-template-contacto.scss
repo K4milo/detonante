@@ -1,0 +1,100 @@
+.page-template-contacto-tpl {
+	.header-wrapper {
+		text-align: center;
+		padding-top: em(40);
+		padding-bottom: em(40);
+		background-size: cover;
+		background-position: center center;
+		background-image: url('../img/bg/header_bg_4.jpg');
+		position: relative;
+		text-align: center;
+		.caption{
+			display: inline-block;
+			position: relative;
+			padding: em(48) em(70);
+			width: 100%;
+			max-width: 960px;
+			border: em(4) solid $purple;
+			margin: 120px auto 40px;
+			@include desktop {
+				margin: 200px auto 40px;
+			}
+			p {
+				font-size: em(22);
+				color: $white;
+				text-transform: uppercase;
+				font-family: $bold;
+				@include desktop {
+					font-size: em(34);
+				}
+			}
+		}
+	}
+	// Contact form
+	.form-wrapper {
+		background-image: url('../img/bg/sea_bg.jpg');
+		background-size: cover;
+		background-position: center center;
+		text-align: center;
+		padding-top: em(20);
+		padding-bottom: em(20);
+		.wpcf7-form {
+			padding: em(20) 0;
+			@include desktop { 
+				padding: em(30) 0;
+			}
+			p {
+				input[type="submit"] {
+					color: $white;
+					font-family: $bold;
+					background-color: $salmon;
+					font-size: em(18);
+					padding: em(10) em(15);
+					text-transform: uppercase;
+					border: none;
+					@include desktop {
+						font-size: em(25);	
+						padding: em(10) em(20);
+					}
+				}
+			}
+			span {
+				margin-bottom: em(20);
+				display: block;
+				input {
+					&[type="text"],
+					&[type="email"] {
+						border: none;
+						width: 100%;
+						padding: em(5) em(10);
+						font-family: $bold;
+						color: $salmon;
+						font-size: em(18);
+						text-transform: uppercase;
+						letter-spacing: 3px;
+						@include thePlaceholder($lblue); 
+						@include desktop {
+							padding: em(15);
+							font-size: em(30);
+						}
+					}
+				}
+				textarea {
+					border: none;
+					width: 100%;
+					padding: em(5) em(10);
+					font-family: $bold;
+					color: $salmon;
+					font-size: em(18);
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					@include thePlaceholder($lblue); 
+					@include desktop {
+						padding: em(15);
+						font-size: em(30);
+					}
+				}
+			}
+		}
+	}
+}
