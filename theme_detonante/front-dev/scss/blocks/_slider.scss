@@ -6,7 +6,12 @@
 	.hero-slider--main-slider {
 		padding: 0;
 		margin: 0;
-		@include desktop;
+		@include mobile{
+			.slick-arrow {
+				display: none !important;
+			}
+		}
+
 		.slider--item {
 			display: block;
 			text-align: center;
@@ -22,6 +27,7 @@
 				color: $white;
 				width: 90%;
 				max-width: em(650);
+				margin: em(120) auto;
 				@include desktop {
 					position: absolute;
 					bottom: 18%;
@@ -36,11 +42,10 @@
 					letter-spacing: 5px;
 					border: em(5) solid $yellow;
 					text-align: center;
-					padding: 20px;
+					padding: 20px 0;
 					@include desktop {
 						padding: 40px;
 						font-size: em(58);
-						height: 320px;
 					}
 				}
 				p {

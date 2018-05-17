@@ -18,8 +18,11 @@
 				color: $white;
 				text-transform: uppercase;
 				letter-spacing: 5px; 
-				font-size: em(35);
+				font-size: em(20);
 				font-family: $bold;
+				@include desktop{
+					font-size: em(35);
+				}
 			}
 			.text-wrap {
 				min-height: em(100);

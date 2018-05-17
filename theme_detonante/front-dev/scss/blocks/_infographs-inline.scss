@@ -1,5 +1,5 @@
 .infographs-inline {
- 	//title component
+
  	.quote-title {
 		background-color: $dgrey;
 		padding: em(20) 0;
@@ -24,7 +24,7 @@
 				color: $marine;
 				padding-bottom: 15px;
 				@include desktop {
-					font-size: 40px;
+					font-size: 26px;
 					margin: 0 60px;
 				}
 				@include gradient-line(0, 4px);
@@ -52,8 +52,11 @@
 			height: em(430);
 			position: relative;
 			h3 {
+				position: relative;
 				display: block;
 				width: 100%;
+				margin: 0 0 0 0;
+				top: 30%;
 				a {
 					position: relative;
 					color: $white;
