@@ -2389,7 +2389,8 @@ body {
   body a {
     transition: all 0.3s; }
     body a:hover {
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      text-decoration: none; }
   body img {
     max-width: 100%;
     height: auto; }
@@ -2958,6 +2959,61 @@ body.single-emprendimiento .single-infographics img {
   max-width: 100%;
   height: auto; }
 
+body.single-lideres .top-single-header {
+  width: 100%;
+  height: 14.375em;
+  padding: 1.25em 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg/header_bg_3.jpg");
+  position: relative;
+  text-align: center; }
+  @media (max-width: 767px) {
+    body.single-lideres .top-single-header {
+      padding-top: 6.25em;
+      height: 20.625em; } }
+  @media (min-width: 1200px) {
+    body.single-lideres .top-single-header {
+      height: 33.125em; } }
+  body.single-lideres .top-single-header h1 {
+    display: inline-block;
+    color: #00DBDE;
+    font-size: 1.75em;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 5px;
+    border: 0.3125em solid #00DBDE;
+    text-align: center;
+    padding: 20px; }
+    @media (min-width: 1200px) {
+      body.single-lideres .top-single-header h1 {
+        padding: 40px;
+        font-size: 1.75em;
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%); } }
+
+body.single-lideres .pre-content .row {
+  background-image: url("../img/bg/sea_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 2.5em; }
+  @media (min-width: 1200px) {
+    body.single-lideres .pre-content .row {
+      padding: 6.75em 0 5em; } }
+  body.single-lideres .pre-content .row img {
+    max-width: 100%;
+    margin: 0 auto; }
+
+body.single-lideres .top-information {
+  padding-bottom: 6.25em; }
+  body.single-lideres .top-information h2 {
+    font-size: 1.75em;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 5px;
+    color: #f53b48; }
+
 .page-template-contacto-tpl .header-wrapper {
   text-align: center;
   padding-top: 2.5em;
@@ -3065,6 +3121,50 @@ body.single-emprendimiento .single-infographics img {
             padding: 0.9375em;
             font-size: 1.875em; } }
 
+.page-template-default .top-single-header {
+  width: 100%;
+  height: 14.375em;
+  padding: 1.25em 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg/header_bg_2.jpg");
+  position: relative;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .page-template-default .top-single-header {
+      padding-top: 6.25em;
+      height: 20.625em; } }
+  @media (min-width: 1200px) {
+    .page-template-default .top-single-header {
+      height: 33.125em; } }
+  .page-template-default .top-single-header h1 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.75em;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 5px;
+    border: 0.3125em solid #f9d423;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px; }
+    @media (min-width: 1200px) {
+      .page-template-default .top-single-header h1 {
+        padding: 40px;
+        font-size: 2.375em;
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%); } }
+
+.page-template-default .main-content {
+  padding: 1.875em 0; }
+  @media (min-width: 1200px) {
+    .page-template-default .main-content {
+      padding: 1.875em 5em; } }
+  .page-template-default .main-content p {
+    line-height: 1.3;
+    font-size: 1.4375em; }
+
 .taxonomy-products-loop {
   text-align: center;
   margin-bottom: 2.5em; }
@@ -3111,6 +3211,65 @@ body.single-emprendimiento .single-infographics img {
       color: #00DBDE; }
     .taxonomies-wrapper .taxonomy-item.taxonomy-artesanias h3 {
       color: #f9d423; }
+
+.loop-wrapper .post-item {
+  position: relative;
+  margin-bottom: 1.875em;
+  text-align: center; }
+  .loop-wrapper .post-item h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: "Brandon Grotesque Bold"; }
+    @media (min-width: 1200px) {
+      .loop-wrapper .post-item h3 {
+        font-size: 1.4375em; } }
+  .loop-wrapper .post-item a.cta {
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 0.625em;
+    color: #ffffff;
+    font-size: 0.8125em;
+    font-family: "Brandon Grotesque Bold";
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #000000;
+    transition: all 0.4s;
+    padding: 10px 24px; }
+    .loop-wrapper .post-item a.cta:hover {
+      background-color: #f9d423; }
+  .loop-wrapper .post-item:nth-child(2n+2) h3 {
+    color: #f53b48; }
+  .loop-wrapper .post-item:nth-child(2n+2) a.cta {
+    background-color: #f53b48; }
+  .loop-wrapper .post-item:nth-child(3n+3) h3 {
+    color: #453A94; }
+  .loop-wrapper .post-item:nth-child(3n+3) a.cta {
+    background-color: #453A94; }
+  .loop-wrapper .post-item:nth-child(4n+5) h3 {
+    color: #E14FAD; }
+  .loop-wrapper .post-item:nth-child(4n+5) a.cta {
+    background-color: #E14FAD; }
+  .loop-wrapper .post-item:nth-child(5n+5) h3 {
+    color: #81f3aa; }
+  .loop-wrapper .post-item:nth-child(5n+5) a.cta {
+    background-color: #81f3aa; }
+  .loop-wrapper .post-item:nth-child(6n+6) h3 {
+    color: #00DBDE; }
+  .loop-wrapper .post-item:nth-child(6n+6) a.cta {
+    background-color: #00DBDE; }
+  .loop-wrapper .post-item .thumbnail-image {
+    display: block;
+    width: 100%;
+    height: 10.625em;
+    overflow: hidden;
+    background: #606060; }
+  .loop-wrapper .post-item .txt-wrapper {
+    padding: 1.25em 0 3.125em; }
+    .loop-wrapper .post-item .txt-wrapper p {
+      font-weight: bold; }
+      @media (min-width: 1200px) {
+        .loop-wrapper .post-item .txt-wrapper p {
+          min-height: 13.125em; } }
 
 .hero-slider {
   position: relative;

@@ -141,3 +141,72 @@ body {
 		}
 	}
 }
+
+// Single page for emprendimiento
+body {
+	&.single-lideres {
+		// Header single emprendimiento
+		.top-single-header {
+			width: 100%;
+			height: em(230);
+			padding: em(20) 0;
+			background-size: cover;
+			background-position: center center;
+			background-image: url('../img/bg/header_bg_3.jpg');
+			position: relative;
+			text-align: center;
+			@include mobile {
+				padding-top: em(100);
+				height: em(330);
+			}
+			@include desktop {
+				height: em(530);
+			}
+			h1 {
+				display: inline-block;
+				color: $lblue;
+				font-size: em(28);
+				font-family: $bold;
+				letter-spacing: 5px;
+				border: em(5) solid $lblue;
+				text-align: center;
+				padding: 20px;
+				@include desktop {
+					padding: 40px;
+					font-size: em(28);
+					position: absolute;
+					bottom: 18%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+		// pre content
+		.pre-content {
+			.row {
+				background-image: url('../img/bg/sea_bg.jpg');
+				background-size: cover;
+				background-position: center center;
+				text-align: center;
+				padding: em(40);
+				@include desktop {
+					padding: em(108) 0 em(80);
+				}
+				img {
+					max-width: 100%;
+					margin: 0 auto;
+				}
+			}
+		}
+		// Text
+		.top-information {
+			h2 {
+				font-size: em(28);
+				font-family: $bold;
+				letter-spacing: 5px;
+				color: $salmon;
+			}
+			padding-bottom: em(100);
+		}
+	}
+}

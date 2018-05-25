@@ -1,19 +1,21 @@
-<?php get_template_part('includes/header'); ?>
+<?php get_template_part('includes/header');
 
-<div class="container">
-  <div class="row">
+  while(have_posts()):the_post();
+    ?>
+    <?php if (has_post_thumbnail()): ?>
+    <header class="top-single-header" style="background: url('<?php the_post_thumbnail_url('full'); ?> '); background-size: cover;">
+      <h1><?php the_title(); ?></h1>
+    </header>
+    <?php else: ?>
+    <header class="top-single-header">
+      <h1><?php the_title(); ?></h1>
+    </header>
+    <?php endif; ?>
 
-    <div class="col-xs-12 col-sm-8">
-      <div id="content" role="main">
-        <?php get_template_part('includes/loops/content', 'page'); ?>
-      </div><!-- /#content -->
+    <div class="main-content container">
+          <?php the_content(); ?>
     </div>
-    
-    <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-      <?php get_template_part('includes/sidebar'); ?>
-    </div>
-    
-  </div><!-- /.row -->
-</div><!-- /.container -->
+<?php
 
-<?php get_template_part('includes/footer'); ?>
+  endwhile;
+  get_template_part('includes/footer'); ?>

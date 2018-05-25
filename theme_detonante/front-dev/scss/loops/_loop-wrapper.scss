@@ -1,0 +1,100 @@
+.loop-wrapper {
+	.post-item {
+		position: relative;
+		margin-bottom: em(30);
+		text-align: center;
+		h3 {
+			font-size: em(20);
+			text-transform: uppercase;
+			font-family: $bold;
+			@include desktop {
+				font-size: em(23);
+			}
+		}
+		a {
+			&.cta {
+				display: inline-block;
+				background-color: $black;
+				border-radius: em(10);
+				color: $white;
+				font-size: em(13);
+				font-family: $bold;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				background-color: $black;
+				transition: all 0.4s;
+				padding: 10px 24px;
+				&:hover {
+					background-color: $yellow;
+				}
+			}
+		}
+		&:nth-child(2n+2) {
+			h3 {
+				color: $salmon;
+			}
+			a {
+				&.cta {
+					background-color: $salmon;
+				}
+			}
+		}
+		&:nth-child(3n+3) {
+			h3 {
+				color: $dpurple;
+			}
+			a {
+				&.cta {
+					background-color: $dpurple;
+				}
+			}
+		}
+		&:nth-child(4n+5) {
+			h3 {
+				color: $pink; 
+			}
+			a {
+				&.cta {
+					background-color: $pink; 
+				}
+			}
+		}
+		&:nth-child(5n+5) {
+			h3 {
+				color: $marine;
+			}
+			a {
+				&.cta {
+					background-color: $marine;
+				}
+			}
+		}
+		&:nth-child(6n+6) {
+			h3 {
+				color: $lblue;
+			}
+			a {
+				&.cta {
+					background-color: $lblue;
+				}
+			}
+		}
+		// text content
+		.thumbnail-image {
+			display: block;
+			width: 100%;
+			height: em(170);
+			overflow: hidden;
+			background: $grey;
+		}
+		.txt-wrapper {
+			padding: em(20) 0 em(50);
+			p {
+				font-weight: bold;
+				@include desktop {
+					min-height: em(210);
+				}
+			}
+		}
+	}
+}

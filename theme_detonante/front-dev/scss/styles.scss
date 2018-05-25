@@ -19,10 +19,12 @@
 //Pages
 @import "pages/_single-emprendimiento";
 @import "pages/_page-template-contacto";
+@import "pages/_page-template-default";
 
 //loops
 @import "loops/_loop-posts";
 @import "loops/_loop-taxonomies";
+@import "loops/_loop-wrapper";
 
 //Blocks
 @import "blocks/_slider";
