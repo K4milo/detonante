@@ -69,7 +69,7 @@ get_template_part('includes/header');
 
 				<ul class="gallery-carousel">
 					<?php while(have_rows('gallery_items')): the_row(); ?>
-						<li class="item-gallery" style="background-image: url(<?php the_sub_field('item_image'); ?>)">
+						<li class="item-gallery" style="background-image: url(<?php the_sub_field('item_image'); ?>)" data-url="<?php the_sub_field('item_image'); ?>">
 							<?php if(get_sub_field('caption_item')):?>
 							<div class="caption-slide">
 								<?php the_sub_field('caption_item'); ?>
