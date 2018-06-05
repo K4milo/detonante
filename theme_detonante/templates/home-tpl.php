@@ -20,6 +20,9 @@ get_template_part('includes/header');
 		//Information
 		get_template_part('includes/blocks/block','info'); 
 
+		//Logos
+		get_template_part('includes/blocks/block','logos'); 
+
 
 	endwhile;
 

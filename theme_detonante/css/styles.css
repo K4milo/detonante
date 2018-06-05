@@ -3193,6 +3193,8 @@ body.single-lideres .top-information {
     transition: all 0.4s; }
     .taxonomies-wrapper .taxonomy-item:hover {
       transform: scale(1.1); }
+    .taxonomies-wrapper .taxonomy-item img {
+      max-width: 70%; }
     .taxonomies-wrapper .taxonomy-item h3 {
       font-size: 1.5625em;
       text-transform: uppercase;
@@ -3377,6 +3379,19 @@ body.single-lideres .top-information {
         vertical-align: middle;
         position: relative;
         top: -2px; }
+
+.logos-wrapper ul {
+  padding: 1.875em 0;
+  text-align: center; }
+  .logos-wrapper ul li {
+    display: inline-block;
+    margin: 0 2em; }
+    @media (max-width: 767px) {
+      .logos-wrapper ul li {
+        margin: 0.625em auto;
+        display: block; } }
+    .logos-wrapper ul li img {
+      max-width: 100%; }
 
 .infographs-inline .quote-title {
   background-color: #333333;
