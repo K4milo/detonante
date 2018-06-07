@@ -27,10 +27,10 @@
 				color: $white;
 				width: 90%;
 				max-width: em(650);
-				margin: em(120) auto;
+				margin: em(120) auto 0;
 				@include desktop {
 					position: absolute;
-					bottom: 18%;
+					bottom: 20%;
 					left: 50%;
 					transform: translateX(-50%);
 				}
@@ -40,7 +40,7 @@
 					font-size: em(28);
 					font-family: $bold;
 					letter-spacing: 5px;
-					border: em(5) solid $yellow;
+					border: em(2) solid $yellow;
 					text-align: center;
 					padding: 20px 0;
 					@include desktop {

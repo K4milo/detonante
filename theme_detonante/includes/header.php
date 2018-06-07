@@ -27,17 +27,17 @@
       </button>
       <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
     </div>
-    <div class="navbar-social">
-      <?php
-            wp_nav_menu( 
-              array (
-                'theme_location'    => 'navbar-networks',
-                'menu_class'        => 'header-social'
-              )
-            );
-        ?>
-    </div>
     <div class="collapse navbar-collapse" id="navbar">
+      <div class="navbar-social">
+        <?php
+              wp_nav_menu( 
+                array (
+                  'theme_location'    => 'navbar-networks',
+                  'menu_class'        => 'header-social'
+                )
+              );
+          ?>
+      </div>
       <?php
             wp_nav_menu( array(
                 'theme_location'    => 'navbar-left',
