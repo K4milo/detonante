@@ -7,6 +7,8 @@ get_template_part('includes/header');
 		<header class="top-single-header">
 			<h1><?php the_title(); ?></h1>
 		</header>
+		
+		<?php if(has_post_thumbnail()): ?>
 
 		<div class="container-fluid pre-content">
 			<div class="row">
@@ -15,6 +17,8 @@ get_template_part('includes/header');
 				</figure>
 			</div>
 		</div>
+
+	<?php endif; ?>
 
 		<div class="main-content container">
 			<div class="row top-information">

@@ -28,6 +28,7 @@
 				width: 90%;
 				max-width: em(650);
 				margin: em(120) auto 0;
+				border: em(2) solid $yellow;
 				@include desktop {
 					position: absolute;
 					bottom: 20%;
@@ -40,9 +41,8 @@
 					font-size: em(28);
 					font-family: $bold;
 					letter-spacing: 5px;
-					border: em(2) solid $yellow;
 					text-align: center;
-					padding: 20px 0;
+					padding: 20px 0 10px;
 					@include desktop {
 						padding: 40px;
 						font-size: em(58);
