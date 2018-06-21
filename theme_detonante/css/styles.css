@@ -3178,7 +3178,7 @@ body.single-lideres .top-information {
     clear: both; }
   .taxonomy-products-loop .col-md-4 {
     transition: all 0.4s;
-    min-height: 13.75em; }
+    min-height: 18.75em; }
     .taxonomy-products-loop .col-md-4:hover {
       transform: scale(1.1); }
     .taxonomy-products-loop .col-md-4 h3 {
@@ -3275,7 +3275,8 @@ body.single-lideres .top-information {
       text-align: center;
       background-size: cover;
       background-position: center center;
-      position: relative; }
+      position: relative;
+      min-height: 31.25em; }
       @media (min-width: 1200px) {
         .hero-slider .hero-slider--main-slider .slider--item {
           height: 100vh;
@@ -3285,10 +3286,11 @@ body.single-lideres .top-information {
         color: #ffffff;
         width: 90%;
         max-width: 40.625em;
-        margin: 7.5em auto 0;
+        margin: 12.5em auto 0;
         border: 0.125em solid #f9d423; }
         @media (min-width: 1200px) {
           .hero-slider .hero-slider--main-slider .slider--item .caption-slider {
+            margin: 7.5em auto 0;
             position: absolute;
             bottom: 20%;
             left: 50%;
