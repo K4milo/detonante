@@ -28,7 +28,12 @@ get_template_part('includes/header');
 				<div class="col-md-5 side-leader">
 					<?php if(get_field('logo_field')):?>
 						<figure class="logo-emp">
-							<img src="<?php the_field('image_field'); ?>">
+							<img src="<?php the_field('image_field'); ?>" alt="image <?php the_title(); ?>"/>
+						</figure>
+					<?php endif; ?>
+					<?php if(get_field('image_field')):?>
+						<figure class="logo-emp">
+							<img src="<?php the_field('image_field'); ?>" alt="image <?php the_title(); ?>"/>
 						</figure>
 					<?php endif; ?>
 				</div>	
