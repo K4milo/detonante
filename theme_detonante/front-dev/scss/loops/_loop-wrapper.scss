@@ -3,6 +3,9 @@
 		position: relative;
 		margin-bottom: em(30);
 		text-align: center;
+		@include desktop {
+			min-height: 584px;
+		}
 		h3 {
 			font-size: em(20);
 			text-transform: uppercase;

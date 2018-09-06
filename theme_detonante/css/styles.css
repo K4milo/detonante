@@ -3223,6 +3223,9 @@ body.single-lideres .top-information {
   position: relative;
   margin-bottom: 1.875em;
   text-align: center; }
+  @media (min-width: 1200px) {
+    .loop-wrapper .post-item {
+      min-height: 584px; } }
   .loop-wrapper .post-item h3 {
     font-size: 1.25em;
     text-transform: uppercase;
